@@ -53,8 +53,7 @@ let quiz: Quiz | null = null,
   timer = 0;
 let selectedDay = dayKey(),
   month = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
-let resultPage = 0,
-  waiting: ServiceWorker | null = null,
+let waiting: ServiceWorker | null = null,
   reloadReady = false,
   offlineReady = false;
 let importPreview: Backup | null = null,
@@ -133,7 +132,7 @@ function quizScreen() {
   return `
   <section class="quiz-layout"><div class="row quiz-heading">${button('quit', '終了', 'subtle')}<span>${esc(sessionLabel)}</span><strong>${q.index + 1} <span class="muted">/ ${q.words.length}</span></strong></div>
   <progress class="course-progress" value="${q.index + 1}" max="${q.words.length}" aria-label="コース進捗"></progress>
-  <div class="quiz-meta"><span class="badge">${POS[q.word.pos]}</span><span>日本語の意味を選ぼう</span><strong id="timer" role="timer" aria-label="残り時間">${Math.ceil(q.remaining)}秒</strong></div>
+  <div class="quiz-meta"><span class="badge">${POS[q.word.pos]}</span><span>${q.answered ? '英語もあわせて覚えよう' : '日本語の意味を選ぼう'}</span><strong id="timer" role="timer" aria-label="残り時間">${Math.ceil(q.remaining)}秒</strong></div>
   <div class="word-card"><span class="eyebrow">WORD ${String(q.index + 1).padStart(2, '0')}</span><h1>${esc(q.word.english)}</h1><p>${LEVELS[q.word.level]} · 基本的な意味を1つ選択</p></div>
   <progress id="countdown" value="${q.remaining}" max="${q.seconds}" aria-label="残り時間"></progress>
   <div class="choices">${q.options
@@ -142,37 +141,35 @@ function quizScreen() {
         wrong = q.answered && a?.selected?.key === w.key && !a.correct;
       return button(
         `answer-${i}`,
-        `<span class="choice-index">${correct ? '✓' : wrong ? '×' : i + 1}</span><span>${esc(w.japanese)}</span>`,
+        `<span class="choice-index">${correct ? '✓' : wrong ? '×' : i + 1}</span><span class="choice-content"><span class="choice-japanese">${esc(w.japanese)}</span>${q.answered ? `<span class="choice-english" lang="en">${esc(w.english)}</span>` : ''}</span>`,
         `choice ${correct ? 'correct' : wrong ? 'wrong' : ''}`,
         q.answered || busy ? 'disabled' : '',
       );
     })
     .join('')}</div>
-  ${
+  <div class="quiz-footer">${
     q.answered
-      ? `<div class="feedback ${a!.correct ? 'good' : 'bad'}" role="status"><b>${a!.correct ? '正解！' : a!.selected === null ? '時間切れ' : 'もう一度、覚えよう'}</b><span>${esc(q.word.english)} = ${esc(q.word.japanese)}</span></div>
-    ${pending ? `${button('retry-save', '回答をもう一度保存する', 'primary full')}<p class="hint error-text">まだ保存できていません。保存してから次へ進んでください。</p>` : button('next', q.index + 1 === q.words.length ? '結果を見る →' : '次の単語へ →', 'primary full', busy ? 'disabled' : '')}`
-      : `<p class="footnote">今日 ${today().words} / ${data.profile.settings.dailyGoal}語 <span class="desktop-hint">· 数字キー 1〜6 で回答</span></p>`
+      ? `<div class="feedback ${a!.correct ? 'good' : 'bad'}" role="status"><b>${a!.correct ? '正解！' : a!.selected === null ? '時間切れ' : '不正解'}</b><span>選択肢の英語も確認</span></div>
+    ${pending && !busy ? `${button('retry-save', '回答をもう一度保存する', 'primary full')}<p class="hint error-text">まだ保存できていません。保存してから次へ進んでください。</p>` : button('next', busy ? '保存中…' : q.index + 1 === q.words.length ? '結果を見る →' : '次の単語へ →', 'primary full', busy ? 'disabled' : '')}`
+      : `<p class="footnote">回答すると各選択肢の英単語も表示します。<span class="desktop-hint"> 数字キー 1〜6 で回答</span></p>`
   }
-  </section>`;
+  </div></section>`;
 }
 function results() {
   const q = quiz!,
-    correct = q.answers.filter((a) => a.correct).length,
-    pages = Math.ceil(q.answers.length / 20);
+    correct = q.answers.filter((a) => a.correct).length;
   return `<section class="narrow"><p class="eyebrow blue center">SESSION COMPLETE</p><h1 class="center">トレーニング完了</h1>
   <div class="result-card"><span class="eyebrow">ACCURACY</span><strong>${accuracy(correct, q.answers.length)}</strong><p>正解 ${correct}/${q.answers.length}問 · 回答時間 ${roundEven(q.answers.reduce((s, a) => s + a.elapsed, 0))}秒</p></div>
   <p class="center motivation">今日 ${today().words} / ${data.profile.settings.dailyGoal}語${today().words >= data.profile.settings.dailyGoal ? ' · 目標達成！' : ''}</p>
   ${q.mistakes.length ? button('review', `まちがえた ${q.mistakes.length}語を復習 ↻`, 'primary full') : '<p class="feedback good center">全問正解！</p>'}
-  <div class="row result-nav">${button('home', 'ホームへ', 'outline')}${button('history', 'カレンダーを見る', 'outline')}</div><h2>今回の単語</h2>
+  <div class="row result-nav">${button('home', 'ホームへ', 'outline')}${button('history', 'カレンダーを見る', 'outline')}</div><div class="results-list-heading"><h2>今回の単語 <small>全${q.answers.length}語</small></h2><p class="scroll-guide">↓ 下へスクロールして全ての単語を確認</p></div>
   <ul class="word-list">${q.answers
-    .slice(resultPage * 20, (resultPage + 1) * 20)
     .map(
-      (a) =>
-        `<li><span class="${a.correct ? 'good-text' : 'error-text'}">${a.correct ? '✓' : '×'}</span><div><b>${esc(a.word.english)}</b><span>${esc(a.word.japanese)}</span></div>${a.selected === null ? '<small>時間切れ</small>' : ''}</li>`,
+      (a, i) =>
+        `<li><small class="word-number">${i + 1}</small><span class="${a.correct ? 'good-text' : 'error-text'}">${a.correct ? '✓' : '×'}</span><div><b>${esc(a.word.english)}</b><span>${esc(a.word.japanese)}</span></div>${a.selected === null ? '<small>時間切れ</small>' : ''}</li>`,
     )
     .join('')}</ul>
-  ${pages > 1 ? `<div class="row">${button('result-prev', '前へ', 'outline', resultPage === 0 ? 'disabled' : '')}<span>${resultPage + 1} / ${pages}</span>${button('result-next', '次へ', 'outline', resultPage + 1 >= pages ? 'disabled' : '')}</div>` : ''}</section>`;
+  <p class="list-end">✓ 全${q.answers.length}語を表示しました</p>${button('home', 'ホームへ戻る', 'outline full')}</section>`;
 }
 function history() {
   const year = month.getFullYear(),
@@ -243,6 +240,7 @@ function settings() {
   <section class="panel"><h2>プライバシー</h2><p>学習データは各端末内に保存され、GitHubや開発者のサーバーには送信されません。解析・広告・外部トラッカーは使いません。</p><p class="hint">URLを共有しても記録は共有されません。端末・ブラウザ・公開URLごとに保存領域は別です。プライベートブラウズでは記録が失われることがあります。</p><p class="hint">本アプリの単語とレベルは独自編集です。TOEIC公式の順位表ではありません。</p></section></section>`;
 }
 function render() {
+  document.body.classList.toggle('quiz-active', screen === 'quiz');
   root.innerHTML = `<header class="app-header"><a href="#" data-action="home" class="brand" ${screen === 'quiz' ? 'aria-disabled="true"' : ''}><img src="./icons/icon-192.png" width="42" height="42" alt=""><span>片山英単語<small>NuASA · 2,000 WORDS</small></span></a>${screen !== 'quiz' ? button('settings', `<span class="avatar">${esc(data.profile.name.slice(0, 1))}</span><span class="profile-name">${esc(data.profile.name)}</span>`, 'profile-button', 'aria-label="プロフィールとデータ"') : ''}</header>
   <div id="update-banner" class="update-banner" ${waiting || reloadReady ? '' : 'hidden'}>${screen === 'quiz' ? '新しい版があります。コース終了後に更新できます。' : `新しい版を利用できます。 ${button('update', '更新する', 'subtle')}`}</div>
   <main id="main">${{ home, quiz: quizScreen, results, history, settings }[screen]()}</main>
@@ -374,9 +372,6 @@ async function answer(index: number | null) {
   } finally {
     busy = false;
     render();
-    root
-      .querySelector<HTMLElement>('.feedback')
-      ?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
   }
 }
 async function next() {
@@ -389,7 +384,6 @@ async function next() {
     await store.finish(data.profile.id, sessionId, true);
     await refresh();
     screen = 'results';
-    resultPage = 0;
     render();
     window.scrollTo(0, 0);
     announce();
@@ -559,9 +553,6 @@ async function action(name: string) {
     } else if (name === 'this-month') {
       month = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
       selectedDay = dayKey();
-      render();
-    } else if (name === 'result-prev' || name === 'result-next') {
-      resultPage += name === 'result-prev' ? -1 : 1;
       render();
     } else if (name === 'export') {
       const blob = new Blob([JSON.stringify(await store.export(), null, 2)], {

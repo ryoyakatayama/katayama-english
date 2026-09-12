@@ -262,6 +262,75 @@ test('responsive layout, touch targets, safe manifest and keyboard settings', as
     ))
     expect(bounds.h).toBeGreaterThanOrEqual(44);
 });
+
+test('quiz needs no scrolling and reveals all six English words only after answering', async ({ page }, testInfo) => {
+  await boot(page);
+  await page.locator('#seconds').fill('120');
+  await page.locator('#seconds').blur();
+  await click(page, 'start');
+  await expect(page.locator('.choice')).toHaveCount(6);
+  for (const [width, height] of [[320, 568], [390, 664], [390, 844], [844, 390], [1280, 900]]) {
+    await page.setViewportSize({ width, height });
+    await expect(page.locator('.choice-english')).toHaveCount(0);
+    const checkViewport = async () => {
+      const bounds = await page.evaluate(() => ({
+        height: document.documentElement.scrollHeight,
+        width: document.documentElement.scrollWidth,
+        scrollY,
+        controls: [...document.querySelectorAll('.choice, [data-action=next]')].map(el => {
+          const r = el.getBoundingClientRect();
+          return { top: r.top, bottom: r.bottom, height: r.height };
+        }),
+      }));
+      expect(bounds.height).toBeLessThanOrEqual(height + 1);
+      expect(bounds.width).toBeLessThanOrEqual(width);
+      expect(bounds.scrollY).toBe(0);
+      for (const r of bounds.controls) {
+        expect(r.top).toBeGreaterThanOrEqual(0);
+        expect(r.bottom).toBeLessThanOrEqual(height);
+        expect(r.height).toBeGreaterThanOrEqual(44);
+      }
+    };
+    await checkViewport();
+    await correct(page);
+    await expect(page.locator('.choice-english')).toHaveCount(6);
+    for (const choice of await page.locator('.choice').all()) {
+      const english = await choice.locator('.choice-english').innerText();
+      const japanese = await choice.locator('.choice-japanese').innerText();
+      expect(v.words.some(w => w.english === english && w.japanese === japanese)).toBe(true);
+    }
+    await checkViewport();
+    if (width === 320) {
+      // Stress the layout with actual long vocabulary labels, independent of random selection.
+      const longest = [...v.words].sort((a, b) => (b.japanese.length * 2 + b.english.length) - (a.japanese.length * 2 + a.english.length)).slice(0, 6);
+      await page.locator('.choice').evaluateAll((choices, words) => choices.forEach((choice, i) => {
+        choice.querySelector('.choice-japanese').textContent = words[i].japanese;
+        choice.querySelector('.choice-english').textContent = words[i].english;
+      }), longest);
+      await checkViewport();
+    }
+    if (width === 390 && height === 664) await page.screenshot({ path: testInfo.outputPath('compact-quiz.png') });
+    await click(page, 'next');
+    await expect(page.locator('.choice-english')).toHaveCount(0);
+  }
+});
+
+test('results show every word in one scrollable list beyond the old 20-word page', async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name !== 'chromium-desktop', 'Same result rendering in every browser; quiz layout is checked on all engines.');
+  await boot(page);
+  await page.setViewportSize({ width: 390, height: 664 });
+  await setGoal(page, 21);
+  await click(page, 'goal');
+  for (let i = 0; i < 21; i++) { await correct(page); await click(page, 'next'); }
+  await expect(page.locator('.word-list li')).toHaveCount(21);
+  await expect(page.locator('.scroll-guide')).toContainText('スクロール');
+  await expect(page.locator('[data-action=result-next], [data-action=result-prev]')).toHaveCount(0);
+  expect(await page.evaluate(() => document.documentElement.scrollHeight > innerHeight)).toBe(true);
+  await page.locator('.list-end').scrollIntoViewIfNeeded();
+  await expect(page.locator('.word-list li').last()).toBeVisible();
+  await expect(page.locator('.list-end')).toContainText('全21語');
+  await page.screenshot({ path: testInfo.outputPath('all-results.png'), fullPage: true });
+});
 test('records survive closing and relaunching the whole browser online', async ({ browserName }) => {
   const { chromium, webkit } = await import('playwright');
   const type = browserName === 'webkit' ? webkit : chromium;
