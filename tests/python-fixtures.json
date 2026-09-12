@@ -1,0 +1,456 @@
+{
+  "compatibilityHash": "798c95506d0e15e9e7b099cb8c11d5808422b23d7077f0a40f2311b5c694ab0d",
+  "pool": [
+    "ability:noun",
+    "address:noun",
+    "airport:noun",
+    "answer:noun",
+    "apartment:noun",
+    "area:noun",
+    "article:noun",
+    "attention:noun"
+  ],
+  "progress": {
+    "ability:noun": {
+      "seen": 8,
+      "correct": 7,
+      "streak": 3,
+      "due_at": 200
+    },
+    "address:noun": {
+      "seen": 8,
+      "correct": 2,
+      "streak": 0,
+      "due_at": 100
+    },
+    "airport:noun": {
+      "seen": 8,
+      "correct": 3,
+      "streak": 1,
+      "due_at": 100
+    },
+    "answer:noun": {
+      "seen": 8,
+      "correct": 4,
+      "streak": 0,
+      "due_at": 101
+    },
+    "apartment:noun": {
+      "seen": 1,
+      "correct": 1,
+      "streak": 1,
+      "due_at": 102
+    }
+  },
+  "selection": {
+    "random": [
+      "ability:noun",
+      "address:noun",
+      "airport:noun",
+      "answer:noun",
+      "apartment:noun"
+    ],
+    "weak": [
+      "address:noun",
+      "answer:noun",
+      "airport:noun",
+      "area:noun",
+      "article:noun"
+    ],
+    "new": [
+      "ability:noun",
+      "address:noun",
+      "airport:noun",
+      "answer:noun",
+      "apartment:noun"
+    ],
+    "due": [
+      "ability:noun",
+      "address:noun",
+      "airport:noun",
+      "answer:noun",
+      "apartment:noun"
+    ]
+  },
+  "eligibility": {
+    "random": [
+      "ability:noun",
+      "address:noun",
+      "airport:noun",
+      "answer:noun",
+      "apartment:noun",
+      "area:noun",
+      "article:noun",
+      "attention:noun"
+    ],
+    "weak": [
+      "ability:noun",
+      "address:noun",
+      "airport:noun",
+      "answer:noun",
+      "apartment:noun",
+      "area:noun",
+      "article:noun",
+      "attention:noun"
+    ],
+    "new": [
+      "area:noun",
+      "article:noun",
+      "attention:noun"
+    ],
+    "due": [
+      "address:noun",
+      "airport:noun"
+    ]
+  },
+  "goal": [
+    "answer:noun",
+    "apartment:noun",
+    "area:noun",
+    "article:noun",
+    "attention:noun",
+    "ability:noun",
+    "address:noun"
+  ],
+  "updates": [
+    {
+      "correct": true,
+      "at": 1700000000000,
+      "expected": {
+        "word": "ability:noun",
+        "seen": 1,
+        "correct": 1,
+        "streak": 1,
+        "lastAt": 1700000000000.0,
+        "dueAt": 1700086400000.0
+      }
+    },
+    {
+      "correct": true,
+      "at": 1700000001000,
+      "expected": {
+        "word": "ability:noun",
+        "seen": 2,
+        "correct": 2,
+        "streak": 2,
+        "lastAt": 1700000001000.0,
+        "dueAt": 1700259201000.0
+      }
+    },
+    {
+      "correct": true,
+      "at": 1700000002000,
+      "expected": {
+        "word": "ability:noun",
+        "seen": 3,
+        "correct": 3,
+        "streak": 3,
+        "lastAt": 1700000002000.0,
+        "dueAt": 1700604802000.0
+      }
+    },
+    {
+      "correct": true,
+      "at": 1700000003000,
+      "expected": {
+        "word": "ability:noun",
+        "seen": 4,
+        "correct": 4,
+        "streak": 4,
+        "lastAt": 1700000003000.0,
+        "dueAt": 1701209603000.0
+      }
+    },
+    {
+      "correct": true,
+      "at": 1700000004000,
+      "expected": {
+        "word": "ability:noun",
+        "seen": 5,
+        "correct": 5,
+        "streak": 5,
+        "lastAt": 1700000004000.0,
+        "dueAt": 1702592004000.0
+      }
+    },
+    {
+      "correct": true,
+      "at": 1700000005000,
+      "expected": {
+        "word": "ability:noun",
+        "seen": 6,
+        "correct": 6,
+        "streak": 6,
+        "lastAt": 1700000005000.0,
+        "dueAt": 1705184005000.0
+      }
+    },
+    {
+      "correct": true,
+      "at": 1700000006000,
+      "expected": {
+        "word": "ability:noun",
+        "seen": 7,
+        "correct": 7,
+        "streak": 7,
+        "lastAt": 1700000006000.0,
+        "dueAt": 1705184006000.0
+      }
+    },
+    {
+      "correct": false,
+      "at": 1700000007000,
+      "expected": {
+        "word": "ability:noun",
+        "seen": 8,
+        "correct": 7,
+        "streak": 0,
+        "lastAt": 1700000007000.0,
+        "dueAt": 1700000607000.0
+      }
+    },
+    {
+      "correct": true,
+      "at": 1700000008000,
+      "expected": {
+        "word": "ability:noun",
+        "seen": 9,
+        "correct": 8,
+        "streak": 1,
+        "lastAt": 1700000008000.0,
+        "dueAt": 1700086408000.0
+      }
+    },
+    {
+      "correct": false,
+      "at": 1700000009000,
+      "expected": {
+        "word": "ability:noun",
+        "seen": 10,
+        "correct": 8,
+        "streak": 0,
+        "lastAt": 1700000009000.0,
+        "dueAt": 1700000609000.0
+      }
+    }
+  ],
+  "attempts": [
+    {
+      "sessionId": "2101708acba7416f9264cc98ca8cb07b",
+      "profileId": "fixture",
+      "question": 0,
+      "word": "ability:noun",
+      "selected": "ability:noun",
+      "correct": true,
+      "elapsed": 1,
+      "at": 1709175600000.0
+    },
+    {
+      "sessionId": "9f6e74782c4e47aabda9168a03f83751",
+      "profileId": "fixture",
+      "question": 0,
+      "word": "ability:noun",
+      "selected": null,
+      "correct": false,
+      "elapsed": 1,
+      "at": 1709175600000.0
+    },
+    {
+      "sessionId": "bfbd1eff8ee1465ebb27faba7d09e14e",
+      "profileId": "fixture",
+      "question": 0,
+      "word": "address:noun",
+      "selected": "address:noun",
+      "correct": true,
+      "elapsed": 1,
+      "at": 1709175600000.0
+    },
+    {
+      "sessionId": "05d4c7b61d60468fa447dc3545e69dc1",
+      "profileId": "fixture",
+      "question": 0,
+      "word": "ability:noun",
+      "selected": "ability:noun",
+      "correct": true,
+      "elapsed": 1,
+      "at": 1709262000000.0
+    },
+    {
+      "sessionId": "49ec65ef28e04e51a50bb9c66ea17dfb",
+      "profileId": "fixture",
+      "question": 0,
+      "word": "ability:noun",
+      "selected": "ability:noun",
+      "correct": true,
+      "elapsed": 1,
+      "at": 1767150000000.0
+    },
+    {
+      "sessionId": "4d1c6fefc2cb4323ab2ffb35d58488c4",
+      "profileId": "fixture",
+      "question": 0,
+      "word": "ability:noun",
+      "selected": null,
+      "correct": false,
+      "elapsed": 1,
+      "at": 1767236400000.0
+    },
+    {
+      "sessionId": "bf3c5b8041cb45e3a223b7c4033e9024",
+      "profileId": "fixture",
+      "question": 0,
+      "word": "ability:noun",
+      "selected": "ability:noun",
+      "correct": true,
+      "elapsed": 1,
+      "at": 1789095600000.0
+    },
+    {
+      "sessionId": "bc77aec2177140ddba92c64adc47e0d5",
+      "profileId": "fixture",
+      "question": 0,
+      "word": "ability:noun",
+      "selected": "ability:noun",
+      "correct": true,
+      "elapsed": 1,
+      "at": 1789182000000.0
+    },
+    {
+      "sessionId": "d9705e0ae1954ce0b880335f5ae3086e",
+      "profileId": "fixture",
+      "question": 0,
+      "word": "address:noun",
+      "selected": null,
+      "correct": false,
+      "elapsed": 1,
+      "at": 1789182000000.0
+    },
+    {
+      "sessionId": "3a64cf22e5b34ee1a48e5cec8b38254c",
+      "profileId": "fixture",
+      "question": 0,
+      "word": "ability:noun",
+      "selected": "ability:noun",
+      "correct": true,
+      "elapsed": 1,
+      "at": 1789268400000.0
+    }
+  ],
+  "days": {
+    "2024-02-29": {
+      "words": 2,
+      "answers": 3,
+      "correct": 2
+    },
+    "2024-03-01": {
+      "words": 1,
+      "answers": 1,
+      "correct": 1
+    },
+    "2025-12-31": {
+      "words": 1,
+      "answers": 1,
+      "correct": 1
+    },
+    "2026-01-01": {
+      "words": 1,
+      "answers": 1,
+      "correct": 0
+    },
+    "2026-09-12": {
+      "words": 2,
+      "answers": 2,
+      "correct": 1
+    }
+  },
+  "months": {
+    "2024-2": {
+      "days": {
+        "2024-02-29": {
+          "day": "2024-02-29",
+          "words": 2,
+          "answers": 3,
+          "correct": 2
+        }
+      },
+      "total": 2,
+      "unique": 2,
+      "answers": 3,
+      "active_days": 1
+    },
+    "2024-3": {
+      "days": {
+        "2024-03-01": {
+          "day": "2024-03-01",
+          "words": 1,
+          "answers": 1,
+          "correct": 1
+        }
+      },
+      "total": 1,
+      "unique": 1,
+      "answers": 1,
+      "active_days": 1
+    },
+    "2025-12": {
+      "days": {
+        "2025-12-31": {
+          "day": "2025-12-31",
+          "words": 1,
+          "answers": 1,
+          "correct": 1
+        }
+      },
+      "total": 1,
+      "unique": 1,
+      "answers": 1,
+      "active_days": 1
+    },
+    "2026-1": {
+      "days": {
+        "2026-01-01": {
+          "day": "2026-01-01",
+          "words": 1,
+          "answers": 1,
+          "correct": 0
+        }
+      },
+      "total": 1,
+      "unique": 1,
+      "answers": 1,
+      "active_days": 1
+    },
+    "2026-9": {
+      "days": {
+        "2026-09-11": {
+          "day": "2026-09-11",
+          "words": 1,
+          "answers": 1,
+          "correct": 1
+        },
+        "2026-09-12": {
+          "day": "2026-09-12",
+          "words": 2,
+          "answers": 2,
+          "correct": 1
+        },
+        "2026-09-13": {
+          "day": "2026-09-13",
+          "words": 1,
+          "answers": 1,
+          "correct": 1
+        }
+      },
+      "total": 4,
+      "unique": 2,
+      "answers": 4,
+      "active_days": 3
+    }
+  },
+  "streak": {
+    "2026-09-12": 2,
+    "2026-09-13": 3,
+    "2026-09-14": 3,
+    "2026-09-15": 0
+  }
+}

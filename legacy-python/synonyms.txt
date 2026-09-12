@@ -1,0 +1,934 @@
+
+ability capacity skill expertise
+answer response reply
+article paper document
+attention care
+bank fund finance
+bill invoice
+book register reserve
+business company corporation enterprise organization
+career occupation job work task assignment labor
+chance opportunity occasion
+city town
+class course seminar workshop
+client customer consumer
+conference convention meeting
+contract agreement lease
+decision conclusion determination
+direction way route
+employee worker staff personnel workforce
+equipment facility device machine tool
+error mistake problem issue trouble difficulty challenge
+fee charge price cost expense
+food meal
+gift donation reward
+goal objective purpose mission intention
+group team
+guest visitor
+house accommodation apartment
+idea opinion perspective
+information detail data
+item product merchandise
+kind type category
+law rule regulation policy
+letter correspondence
+location place position venue destination
+manager supervisor administrator
+money cash currency
+number quantity figure amount
+order request
+owner landlord
+part component
+payment salary income revenue profit benefit margin
+plan project strategy proposal initiative
+record report reference
+result consequence outcome
+road street
+sale retail
+schedule calendar itinerary agenda
+seat vacancy
+shop store outlet
+stationery supplies
+ticket pass
+tour trip travel journey
+transportation freight shipment
+university college
+vehicle car bus
+way method procedure system
+achievement accomplishment performance
+appointment reservation
+approval permission authorization
+assessment evaluation review
+assistance support help contribution cooperation
+asset resource
+barrier obstacle
+brochure booklet
+certificate license identification
+colleague coworker
+condition situation state
+contact connection
+construction building
+delay postponement
+demand requirement need
+estimate forecast prediction
+expense expenditure
+expert specialist consultant
+foundation basis
+guarantee warranty
+impact influence effect
+instruction direction
+inventory stock supply
+measure solution
+overview summary
+reception entrance
+refund reimbursement
+responsibility obligation duty
+risk danger
+survey investigation inspection
+accept approve agree
+add include
+allow let permit authorize enable
+appear emerge
+arrange organize coordinate prepare
+ask request inquire
+attend join participate
+begin start commence initiate
+borrow rent lease
+bring carry deliver transport ship send
+build construct establish
+buy purchase acquire get obtain
+call phone contact
+cancel discontinue stop suspend
+change adjust amend revise update modify
+check confirm verify inspect
+choose select pick
+collect accumulate gather
+come arrive
+complete finish accomplish achieve fulfill finalize
+consider think
+continue proceed
+create make produce manufacture generate develop
+decide determine
+describe explain clarify
+discuss talk speak say tell
+do perform conduct implement execute
+encourage support assist help aid
+end finish
+enter access
+find locate identify detect discover
+follow comply obey
+give provide offer supply contribute
+grow expand increase extend boost enhance improve
+have hold keep retain maintain conserve
+hear listen
+hope want wish desire
+learn study
+leave depart
+like enjoy appreciate
+look see watch monitor observe
+move transfer relocate
+need require
+open launch
+pay spend compensate reimburse
+place put
+print copy
+read review
+receive obtain get
+reduce minimize decrease
+remember recall
+repair restore
+repeat reproduce
+reply respond
+report inform notify announce
+return restore
+run operate manage administer
+share distribute
+show display demonstrate indicate
+suggest propose recommend advise
+take pick
+teach instruct
+thank appreciate
+try attempt
+use consume
+win succeed
+withdraw reject deny
+accommodate house
+adapt adjust
+adopt recruit hire
+advertise promote
+allocate assign
+analyze assess evaluate
+anticipate expect forecast predict
+apologize regret
+assemble combine
+assure ensure
+collaborate cooperate
+concentrate focus
+consult advise
+convince persuade
+designate specify appoint
+eliminate exclude remove avoid prevent
+emphasize stress
+investigate inspect examine
+renew update
+remind remember
+replace exchange
+resolve solve
+supervise monitor
+able capable qualified eligible
+active busy productive
+available accessible
+bad negative poor
+beautiful attractive
+big large great considerable substantial extensive
+careful cautious thorough
+cheap affordable reasonable
+clear obvious visible
+comfortable convenient
+common general ordinary usual typical routine regular normal
+correct right true accurate precise
+dangerous critical
+different various
+difficult hard challenging
+early initial primary first prior previous
+easy simple
+enough adequate sufficient
+excellent great wonderful outstanding exceptional remarkable notable impressive
+famous popular leading
+far remote distant
+fast quick prompt immediate timely
+final last
+fine good nice satisfactory favorable desirable beneficial useful valuable
+foreign international global external
+free complimentary
+fresh new modern current recent emerging innovative
+friendly polite
+full entire comprehensive overall
+happy delighted glad
+hard solid
+healthy well
+high tall
+important significant critical essential necessary mandatory vital main primary central
+interested enthusiastic dedicated
+light slight
+limited small short little
+local domestic
+long extensive
+low minimum
+lucky fortunate
+only unique exclusive
+personal individual private confidential
+possible feasible potential prospective promising
+practical useful
+professional experienced qualified competent
+public official formal
+quiet calm
+ready prepared
+real original actual
+rich wealthy
+safe secure stable reliable
+same similar equivalent consistent
+serious severe
+slow late
+special particular specific
+strong powerful
+successful profitable
+sure certain confident
+tired exhausted
+usual regular routine
+wide broad extensive
+wrong incorrect defective
+annual yearly
+basic fundamental
+daily everyday
+direct immediate
+fair equal
+responsible accountable
+additional extra
+appropriate proper suitable relevant
+approximate rough
+automatic automated
+aware familiar
+commercial corporate financial administrative
+competitive ambitious
+dependent reliant
+durable permanent
+effective efficient
+entire overall
+grateful thankful
+independent individual
+internal domestic
+legal valid
+maximum greatest
+mutual respective
+negative adverse
+numerous various many
+optional voluntary
+permanent lasting
+persuasive convincing
+productive efficient
+reasonable rational
+regular frequent
+remote distant
+temporary tentative
+urgent immediate
+always usually regularly often frequently
+already previously
+also too additionally
+almost approximately nearly
+again repeatedly
+back backward
+carefully accurately precisely
+clearly obviously
+easily simply
+especially particularly
+finally eventually subsequently later
+just exactly
+never rarely
+now currently
+probably possibly
+quickly promptly immediately soon
+really very extremely significantly
+recently lately
+sometimes occasionally
+still yet
+there here
+together equally
+accordingly therefore
+directly immediately
+exclusively only
+gradually increasingly
+initially originally
+nevertheless however
+permanently always
+primarily mainly
+temporarily briefly
+
+ability capacity skill expertise capability competence proficiency
+advancement progress achievement breakthrough
+accountability responsibility liability obligation
+adjustment amendment correction revision reform
+admission acceptance approval permission consent clearance
+advertisement publicity promotion campaign
+advocacy endorsement support assistance
+agreement arrangement contract commitment pledge assurance guarantee
+allocation allowance quota distribution
+analysis assessment appraisal audit evaluation inspection scrutiny investigation survey
+announcement declaration notification briefing
+appliance apparatus equipment device tool machine
+appeal petition request claim objection complaint grievance
+architecture framework structure layout composition
+archive record documentation document manuscript
+assembly gathering meeting conference convention forum
+attitude perspective opinion notion idea concept
+auction bid
+availability accessibility access
+benchmark criterion standard norm guideline
+benefit merit advantage profit earnings proceeds revenue income
+booking appointment reservation
+boundary barrier threshold limit limitation constraint restriction
+brochure booklet pamphlet
+capability capacity ability
+capital finance fund cash money currency liquidity equity
+caption description explanation interpretation
+cargo freight shipment luggage
+carrier courier distributor transportation logistics
+certainty confidence assurance conviction
+charity philanthropy donation contribution
+clarification explanation illustration
+clause stipulation provision condition requirement specification
+closure termination conclusion end completion
+coach mentor adviser consultant guide
+coalition association partnership alliance collaboration cooperation coordination
+collection archive inventory
+commodity product item merchandise material ingredient
+communication dialogue correspondence
+compensation remuneration reward payment reimbursement refund rebate
+competition rivalry conflict friction dispute controversy disagreement
+component part segment division category
+concentration density
+concern worry anxiety
+consistency continuity integrity
+consumption expenditure spending
+contribution input
+convenience benefit utility
+conversion transformation change
+counterpart equivalent substitute alternative replacement
+council board committee
+counsel advice recommendation instruction
+courtesy politeness civility
+credential qualification certificate diploma license identification
+crew staff personnel workforce team
+crisis disaster emergency casualty
+critic reviewer
+custom habit practice routine norm
+debt liability mortgage loan deficit
+dedication commitment engagement involvement
+defect flaw error mistake disadvantage
+deficit shortage scarcity lack
+delegation mission
+description depiction portrayal
+destruction breakdown disruption interruption
+dimension size quantity magnitude
+disability impairment
+disclosure revelation
+discrimination distinction differentiation
+disposal exclusion omission deletion
+dividend yield profit income earnings
+downturn recession decline
+duration period tenure time
+effect impact influence implication repercussion consequence result outcome
+efficiency productivity performance
+eligibility qualification competence
+emission discharge pollution contamination
+employer owner landlord
+endorsement approval acceptance
+enforcement execution implementation operation
+enrollment registration entry admission
+enterprise corporation company business organization institution entity
+equity fairness equality
+establishment foundation inauguration inception origin
+excellence quality merit
+excess surplus overhead redundancy
+exemption waiver exception exclusion
+expiration termination deadline closure
+fabrication manufacture construction production
+factor ingredient component cause impetus stimulus motivation incentive
+feasibility viability possibility probability prospect
+fixture fitting equipment
+flexibility mobility adaptability
+fluctuation volatility variation trend
+format layout form
+fraud misconduct negligence violation
+fulfillment execution performance achievement
+goodwill loyalty favor
+grievance complaint concern objection petition
+guideline instruction recommendation policy rule regulation protocol statute legislation law ordinance
+hazard risk danger threat
+hierarchy ranking
+hypothesis theory assumption premise
+inclusion incorporation integration
+indicator sign gauge figure measure
+inequality disparity discrimination
+infrastructure facility equipment
+innovation invention initiative
+insight understanding perception
+installment payment subscription fee premium fare charge tariff tax royalty gratuity
+integrity honesty ethics
+interface connection contact
+interference intervention intrusion interruption
+involvement participation engagement
+journal newspaper magazine article
+judgment decision conclusion resolution
+justification rationale reason explanation
+legislation law statute ordinance
+liability responsibility accountability
+literacy proficiency competence
+logistics distribution transportation
+longevity duration
+mandate order instruction directive
+mediation arbitration reconciliation settlement compromise concession
+memorandum document notice
+milestone achievement goal objective
+misinterpretation misunderstanding error
+monopoly exclusivity
+morale confidence motivation spirit
+necessity need requirement obligation
+nomination appointment designation
+notification announcement warning alert
+obstacle barrier limitation constraint
+omission exclusion
+occupancy vacancy
+origin foundation establishment
+output production yield productivity
+ownership possession custody
+patent copyright trademark license
+patron client customer consumer
+payroll salary wage pension remuneration
+penalty sanction fine
+portfolio inventory collection
+precedent example model
+precision accuracy
+prestige reputation fame publicity
+priority importance significance
+privilege right advantage benefit permission
+proceeds revenue earnings profit income
+procurement acquisition purchase
+projection forecast prediction estimate
+proportion ratio rate percentage
+proposition proposal suggestion opinion claim
+prosperity wealth affluence
+prototype sample model example
+publicity advertising promotion
+recovery restoration resilience
+referral recommendation introduction
+refurbishment renovation repair maintenance
+regulator authority supervisor administrator
+remittance payment transfer transaction
+retention preservation maintenance
+revision amendment correction modification
+scarcity shortage deficit
+scope range extent coverage area
+security safeguard protection
+settlement solution resolution outcome
+speculation assumption prediction forecast
+stimulus incentive impetus
+subsidy donation grant allowance aid
+succession succession continuity
+synergy cooperation coordination
+testimony evidence confirmation assurance
+turnover departure retirement resignation
+utility service facility
+valuation assessment estimate appraisal
+volatility fluctuation instability
+welfare wellbeing health
+workload task assignment job
+abolish repeal annul rescind revoke cancel terminate cease discontinue halt stop
+abstain refrain avoid
+absorb consume incorporate
+accelerate expedite boost advance
+accredit certify validate verify substantiate corroborate attest confirm check ascertain
+acquaint inform notify tell advise
+activate initiate start launch inaugurate commence begin enact
+adhere abide comply conform follow obey
+admit acknowledge accept concede concur consent agree
+advocate endorse support favor applaud
+affiliate align connect associate
+alert warn caution
+allocate assign appoint designate nominate entrust delegate empower authorize grant
+alter change amend revise modify adjust customize adapt
+amplify augment enhance enlarge expand broaden extend grow increase
+annul void cancel rescind revoke withdraw repeal
+anticipate forecast predict project envisage expect
+appeal request solicit petition
+arise emerge occur happen recur
+arbitrate mediate reconcile settle resolve
+articulate express communicate convey report state say speak tell
+aspire strive hope desire
+assemble compose comprise constitute contain consist include encompass
+assess appraise audit evaluate inspect examine investigate scrutinize analyze
+attach insert add supplement complement incorporate integrate
+attain achieve accomplish fulfill succeed
+attribute ascribe
+award bestow give grant provide supply offer
+ban prohibit prevent block curb restrict inhibit confine deter
+bear withstand tolerate endure undergo
+blame accuse criticize
+blend combine mix merge integrate consolidate
+block obstruct hinder hamper
+board embark ride
+browse scan review look read watch
+capture seize grasp hold
+certify attest substantiate validate verify confirm
+characterize depict portray describe illustrate
+circulate diffuse disseminate distribute spread
+cite quote mention
+claim contend assert maintain contest
+coincide concur coexist correspond
+collapse fail break down
+combat counter tackle oppose confront face
+communicate interact correspond
+compel coerce impose oblige dictate
+comprehend understand grasp know
+conceal obscure hide
+concentrate focus
+conclude determine decide finalize
+confront face encounter tackle
+conserve preserve maintain sustain retain keep safeguard shield protect
+contemplate consider ponder reflect think
+contradict disagree deny dispute contest challenge
+contrast compare differentiate distinguish discriminate
+convert transform alter change modify
+cope handle manage tackle
+cover include contain encompass
+cultivate foster nurture develop grow
+debate discuss argue
+declare announce proclaim inform
+decline diminish decrease lessen reduce minimize deplete downsize
+dedicate devote commit
+deduct subtract offset reduce
+deem regard consider
+defend shield protect safeguard preserve
+delete omit eliminate exclude eradicate remove
+deploy place distribute allocate position
+depreciate devalue decline deteriorate destabilize undermine
+derive obtain gain acquire extract elicit retrieve earn get
+detect discover identify find locate
+deviate divert diverge
+devise invent create design develop innovate
+disclose reveal expose show display exhibit
+discontinue interrupt suspend terminate cease halt stop
+discourage deter hinder hamper
+disburse pay spend remit reimburse
+displace replace substitute exchange
+dissolve disband end terminate
+draft write compose
+duplicate copy reproduce replicate repeat reiterate
+ease alleviate lessen mitigate relieve assuage dispel
+elect select choose nominate opt pick
+employ hire recruit engage
+encourage inspire motivate induce prompt empower
+enrich enhance improve foster
+enroll register
+entitle authorize empower permit allow
+envisage imagine anticipate
+equip supply provide
+evacuate withdraw depart leave
+evolve develop progress advance
+exceed outperform excel surpass outweigh
+exert apply impose
+exploit utilize use employ
+express articulate communicate
+feature include contain
+fluctuate vary oscillate
+found establish create initiate
+function operate work run
+gather collect accumulate assemble
+govern manage administer oversee supervise regulate control
+halt stop cease suspend
+highlight emphasize stress indicate
+host organize convene
+imply suggest infer indicate
+incur bear sustain undergo
+influence affect impact
+innovate devise invent
+integrate incorporate consolidate merge combine
+intervene interfere interrupt
+jeopardize endanger threaten
+liquidate sell dispose
+lodge submit file
+merge combine consolidate unite
+migrate relocate move transfer
+mislead confuse deceive
+mobilize deploy organize
+nominate appoint designate
+omit exclude eliminate delete
+opt choose select decide
+optimize improve streamline enhance maximize
+outsource subcontract delegate
+overcome resolve solve
+overhaul refurbish renovate repair revise reform
+perceive discern notice see recognize identify
+persist continue proceed maintain
+pledge promise assure guarantee commit
+precede lead
+prescribe recommend advise instruct
+prevail win succeed prosper excel
+prolong extend lengthen
+prosecute sue charge accuse
+quantify measure calculate count
+ratify approve endorse accept authorize
+reassure assure convince
+recall remember recollect remind
+rectify correct repair amend revise resolve
+redeem exchange reimburse refund
+refurbish renovate repair restore
+regulate govern administer supervise control
+reinforce strengthen bolster support enhance
+reinstate restore renew resume
+relinquish waive abandon withdraw surrender
+render make cause
+replenish restock replace fill supply
+resemble match correspond
+reside live stay
+resign quit leave retire
+resume restart renew continue
+retrieve restore recover obtain
+seize take capture grasp grab
+settle resolve reconcile
+solicit request ask invite
+stabilize secure maintain sustain
+standardize normalize regulate
+stipulate specify prescribe dictate
+substantiate verify prove demonstrate validate
+supplement complement add
+sustain maintain keep preserve
+tackle handle address confront face
+terminate end stop cancel cease
+undergo experience encounter
+undermine weaken diminish hamper
+undertake begin perform do attempt
+utilize use employ apply
+validate verify certify confirm
+waive relinquish surrender abandon
+absent missing unavailable
+absolute complete entire total
+abstract conceptual
+acceptable adequate satisfactory suitable appropriate
+accessible available attainable
+accomplished proficient competent qualified experienced able capable
+acute severe intense critical
+adjacent near close contiguous
+adverse unfavorable negative detrimental bad harmful
+aggressive assertive proactive
+alert attentive cautious careful meticulous conscientious diligent thorough
+ample sufficient enough adequate abundant
+apparent obvious evident clear explicit visible factual
+applicable appropriate relevant pertinent suitable proper apt
+arbitrary random
+artificial synthetic
+astonishing extraordinary remarkable exceptional notable impressive outstanding
+authentic genuine real true original
+autonomous independent
+average ordinary common regular usual normal typical
+awkward clumsy
+blank empty
+bold decisive assertive vigorous
+brief short concise
+broad wide extensive comprehensive exhaustive inclusive
+casual informal ordinary
+chronic persistent ongoing continuous
+classic typical traditional conventional
+civil public governmental municipal
+coherent logical rational consistent plausible credible
+collective joint mutual reciprocal
+compatible consistent equivalent analogous similar commensurate
+compelling persuasive convincing
+complex intricate elaborate difficult arduous hard
+compulsory mandatory statutory necessary imperative indispensable essential
+concrete specific tangible practical
+consecutive continuous successive subsequent
+conservative cautious prudent judicious careful frugal economical
+constructive beneficial useful positive worthwhile valuable
+contemporary current modern recent new
+continuous constant persistent ongoing
+controversial contentious dubious skeptical
+conventional ordinary usual typical routine
+crucial critical vital important essential significant paramount instrumental
+cumulative aggregate incremental
+delicate fragile subtle vulnerable susceptible
+deliberate intentional explicit
+dense thick solid
+distinct different disparate divergent diverse various
+dramatic drastic substantial considerable significant appreciable
+dynamic active energetic vigorous buoyant
+eager keen enthusiastic interested attentive
+economic financial commercial fiscal
+economical affordable cheap frugal
+elaborate intricate complex detailed meticulous
+enormous huge immense large big considerable substantial
+ethical conscientious honest fair equitable impartial legitimate
+evident obvious apparent explicit clear
+exact accurate precise flawless correct right definitive
+extraordinary exceptional remarkable outstanding unprecedented
+faint weak slight negligible marginal subtle
+fatal lethal detrimental
+firm stable solid robust rigorous stringent
+fluent proficient accomplished competent
+fragile weak delicate vulnerable
+fundamental basic primary essential intrinsic inherent
+generous abundant ample
+genuine authentic real original
+gradual incremental progressive
+harsh strict rigorous stringent severe
+historic historical
+ideal perfect optimal flawless
+identical same equivalent similar analogous
+immune exempt protected
+implicit tacit inherent intrinsic
+inadequate insufficient deficient
+inevitable unavoidable imminent foreseeable
+influential prominent eminent authoritative leading instrumental
+inherent intrinsic fundamental implicit
+intact undamaged complete flawless
+intense intensive strong vigorous acute
+intensive thorough exhaustive rigorous
+intermediate interim temporary partial
+intuitive instinctive
+irrelevant unrelated peripheral
+joint shared collective mutual reciprocal
+legitimate legal lawful valid statutory binding enforceable
+liable accountable responsible susceptible vulnerable
+logical rational coherent judicious reasonable
+loyal faithful dedicated
+marginal slight minor negligible peripheral
+mature experienced developed
+mechanical automatic automated
+modest moderate humble frugal
+neutral impartial unbiased equitable fair
+nominal minimal minor negligible
+ongoing current continuous pending
+optimistic hopeful positive promising
+oral verbal
+partial incomplete limited
+passive inactive dormant stagnant
+periodic regular frequent routine sporadic
+persistent tenacious continual chronic
+physical tangible concrete material
+plausible credible reasonable coherent
+portable mobile movable
+preliminary tentative provisional interim
+prominent eminent famous notable leading prestigious reputable
+punctual prompt timely
+abundant ample numerous plentiful
+accountable liable responsible
+adaptable flexible versatile scalable
+advisable desirable appropriate suitable prudent
+affluent rich wealthy prosperous
+aggregate total entire overall
+analogous similar comparable equivalent
+ancillary auxiliary supplementary subordinate peripheral
+appreciable considerable significant substantial notable
+apt suitable appropriate capable
+arduous demanding difficult hard tedious
+attentive alert diligent careful meticulous
+authoritative official reliable credible
+binding mandatory compulsory enforceable statutory
+blatant obvious evident overt explicit
+buoyant optimistic hopeful successful prosperous
+cohesive united coherent consistent
+commensurate proportional equivalent appropriate
+complementary supplementary ancillary
+concurrent simultaneous contemporary
+conducive favorable beneficial appropriate
+conscientious diligent meticulous attentive careful ethical
+contingent conditional dependent tentative
+cordial friendly warm polite
+costly expensive exorbitant prohibitive
+credible reliable plausible reputable trustworthy
+decisive definitive conclusive firm bold
+deductible exempt
+definitive conclusive final decisive
+detrimental adverse negative harmful bad
+discretionary optional voluntary
+disparate distinct divergent different diverse
+disposable expendable temporary
+disproportionate unequal excessive
+distinctive unique characteristic special notable
+divergent different diverse disparate
+dormant inactive passive stagnant
+dubious doubtful skeptical uncertain
+eminent prominent famous outstanding reputable
+empirical factual experimental
+equitable fair impartial neutral reasonable
+exempt immune deductible
+exhaustive comprehensive thorough extensive inclusive
+exorbitant prohibitive costly expensive excessive
+expedient practical convenient appropriate
+factual real true actual accurate
+finite limited restricted
+flawless perfect ideal immaculate correct
+foreseeable predictable expected imminent
+forthcoming upcoming imminent pending prospective
+frugal economical thrifty modest
+futile useless pointless vain
+hostile adverse aggressive unfriendly
+imminent immediate urgent forthcoming
+impartial equitable neutral fair
+imperative essential mandatory indispensable necessary
+inadvertent accidental unintentional
+incompatible inconsistent different
+incremental gradual cumulative
+indispensable essential vital imperative necessary
+ineligible unqualified
+insolvent bankrupt
+instrumental important influential crucial essential
+interim provisional temporary tentative preliminary
+intricate complex elaborate
+intrinsic inherent essential fundamental
+irreversible permanent lasting
+judicious prudent wise reasonable sensible
+lucrative profitable prosperous
+meticulous careful diligent thorough attentive rigorous
+negligible insignificant marginal slight nominal
+obsolete old outdated conventional
+opaque obscure unclear
+paramount primary main essential important critical
+pending undecided ongoing forthcoming
+peripheral marginal minor ancillary
+pertinent relevant applicable appropriate
+prevalent common widespread frequent popular
+proactive active aggressive enterprising
+proficient skilled competent accomplished experienced
+prohibitive exorbitant expensive costly
+proportional commensurate equivalent
+prudent cautious wise judicious careful
+reciprocal mutual joint
+redundant extra additional unnecessary
+reluctant unwilling hesitant
+remedial corrective constructive
+reputable reliable credible prominent eminent
+resilient robust strong flexible durable
+rigorous strict stringent thorough
+robust strong healthy durable resilient
+skeptical dubious doubtful
+sole only unique exclusive
+solvent affluent wealthy rich
+sporadic occasional infrequent periodic
+stagnant inactive dormant
+statutory legal mandatory binding compulsory
+stringent strict rigorous harsh
+subordinate secondary ancillary
+subsequent next following later
+subtle slight delicate faint
+susceptible vulnerable liable sensitive
+sustainable viable durable lasting
+tangible concrete physical real
+tedious boring arduous
+transparent clear obvious evident
+unanimous united collective
+unprecedented exceptional extraordinary unique
+viable feasible possible practical sustainable
+vigorous energetic active dynamic strong
+volatile unstable fluctuating
+vulnerable fragile susceptible weak
+worthwhile valuable useful beneficial desirable
+abroad overseas internationally
+absolutely entirely fully completely totally
+adequately sufficiently enough fully
+apparently evidently obviously arguably presumably probably
+barely hardly scarcely rarely
+briefly shortly temporarily
+closely carefully meticulously thoroughly accurately
+considerably substantially markedly significantly greatly drastically
+consistently constantly invariably always regularly
+deliberately intentionally voluntarily
+effectively efficiently successfully
+entirely completely fully solely exclusively
+essentially inherently fundamentally intrinsically
+explicitly clearly directly frankly
+formerly previously originally initially
+frankly honestly openly explicitly
+fully entirely completely adequately sufficiently
+highly very extremely exceptionally excessively
+independently separately individually
+largely mainly primarily predominantly substantially
+merely simply only just solely exclusively
+necessarily inevitably invariably
+notably particularly especially exceptionally
+otherwise alternatively
+potentially possibly presumably probably arguably
+preferably ideally
+respectively individually separately
+simultaneously concurrently together jointly
+ultimately eventually finally consequently
+adversely negatively unfavorably
+arguably possibly presumably probably apparently
+concurrently simultaneously jointly together
+consequently therefore accordingly subsequently
+decisively firmly definitely absolutely
+disproportionately excessively
+drastically markedly significantly considerably substantially
+exceptionally extremely highly very notably
+excessively overly extremely
+expeditiously quickly promptly swiftly immediately
+inadvertently accidentally unintentionally
+indefinitely permanently endlessly
+inherently essentially intrinsically fundamentally
+invariably always constantly consistently
+nonetheless nevertheless however
+jointly together mutually collectively concurrently
+markedly significantly considerably substantially drastically
+meticulously carefully closely thoroughly accurately
+mutually reciprocally jointly equally together
+namely specifically exactly
+nominally officially formally
+overwhelmingly extremely greatly
+predominantly mainly largely primarily
+presumably apparently probably arguably potentially
+proactively actively deliberately
+provisionally temporarily tentatively initially
+solely only exclusively merely entirely
+substantially considerably significantly largely
+unanimously collectively jointly together
+voluntarily willingly deliberately

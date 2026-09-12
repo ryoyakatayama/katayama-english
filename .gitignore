@@ -1,0 +1,15 @@
+node_modules/
+.build/
+dist/
+work/
+outputs/
+test-results/
+playwright-report/
+__pycache__/
+data/
+*.sqlite3*
+*.log
+.DS_Store
+Storage/
+AlternativeServices/
+vocabulary-backup*.json
