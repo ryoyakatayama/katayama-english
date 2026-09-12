@@ -262,11 +262,35 @@ test('responsive layout, touch targets, safe manifest and keyboard settings', as
     ))
     expect(bounds.h).toBeGreaterThanOrEqual(44);
 });
+test('records survive closing and relaunching the whole browser online', async ({ browserName }) => {
+  const { chromium, webkit } = await import('playwright');
+  const type = browserName === 'webkit' ? webkit : chromium;
+  const folder = await mkdtemp(path.join(os.tmpdir(), 'katayama-pwa-test-'));
+  let context;
+  try {
+    const options = { headless: true, baseURL: 'http://127.0.0.1:4173/katayama-test/' };
+    context = await type.launchPersistentContext(folder, options);
+    let page = context.pages()[0];
+    await boot(page);
+    await setGoal(page, 1);
+    await click(page, 'goal');
+    await correct(page);
+    await context.close();
+    context = await type.launchPersistentContext(folder, options);
+    page = context.pages()[0];
+    await boot(page);
+    await expect(page.locator('.goal-card')).toContainText('今日の目標達成');
+    await click(page, 'history');
+    await expect(page.locator('.recent')).toContainText('途中まで');
+  } finally {
+    await context?.close();
+    await rm(folder, { recursive: true, force: true });
+  }
+});
+
 test('records survive closing and relaunching the whole browser offline', async ({
   browserName,
 }, testInfo) => {
-  test.skip(browserName === 'webkit' && process.platform === 'win32',
-    'Windows Playwright WebKit loses CacheStorage entries across persistent browser restarts; run this check on Linux/macOS and real iPhone. Same-process offline reload is tested separately.');
   const { chromium, webkit } = await import('playwright');
   const type = browserName === 'webkit' ? webkit : chromium;
   const folder = await mkdtemp(path.join(os.tmpdir(), 'katayama-pwa-test-'));
@@ -278,6 +302,10 @@ test('records survive closing and relaunching the whole browser offline', async 
         testInfo.project.use.baseURL || 'http://127.0.0.1:4173/katayama-test/',
     });
     let page = context.pages()[0];
+    await page.goto('http://127.0.0.1:4173/__cache-probe');
+    await page.evaluate(async () => {
+      await (await caches.open('browser-persistence-probe')).put('/__probe-value', new Response('persisted'));
+    });
     await boot(page);
     await setGoal(page, 1);
     await click(page, 'goal');
@@ -287,8 +315,18 @@ test('records survive closing and relaunching the whole browser offline', async 
       headless: true,
       baseURL: 'http://127.0.0.1:4173/katayama-test/',
     });
-    await disconnect(context, browserName);
     page = context.pages()[0];
+    // Probe the browser's plain Cache API independently of app code and SW.
+    await page.goto('http://127.0.0.1:4173/__cache-probe');
+    const probe = await page.evaluate(async () => {
+      const response = await (await caches.open('browser-persistence-probe')).match('/__probe-value');
+      return response ? await response.text() : null;
+    });
+    console.log(`${browserName}: Cache API value after browser restart = ${JSON.stringify(probe)}`);
+    test.skip(browserName === 'webkit' && probe === null,
+      'This Playwright WebKit runtime loses a plain Cache API entry across browser restart, independently of the app. Real iPhone cold offline launch remains unverified.');
+    expect(probe).toBe('persisted');
+    await disconnect();
     await page.goto('./');
     await expect(page.locator('.goal-card')).toContainText('今日の目標達成');
     await click(page, 'history');

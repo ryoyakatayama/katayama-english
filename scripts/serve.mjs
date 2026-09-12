@@ -27,6 +27,12 @@ http
         }
       }
       const url = new URL(req.url, 'http://localhost');
+      // Bare document outside the app/SW scope for a browser-persistence probe.
+      if (process.env.TEST_OFFLINE_MARKER && url.pathname === '/__cache-probe') {
+        res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' });
+        res.end('<!doctype html><title>Browser storage probe</title>');
+        return;
+      }
       if (!url.pathname.startsWith(base)) {
         res.writeHead(404);
         res.end();
